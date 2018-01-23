@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="U-XA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <title>FoodMap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/images/foodmap-icon.png">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--Contenedor principal-->
+    <div class="container-fluid">
+      <!--Contenedor de la vista splash-->
+      <div class="container" id="splash">
+        <h1 style="font-size: 65px; font-weight: 300; color: rgb(244,128,4)">FoodMap</h1>
+      </div>
+      <!--Contenedor secundario-->
+      <div class="container">
+        <!--Seccion de la vista principal-->
+        <section class="main-view">
+          <h1>FoodMap</h1>
+          <div class="line-break">
+            <i class="fa fa-square-o" aria-hidden="true"></i>
+            <hr align="center" style="width: 100%">
+            <i class="fa fa-square-o" aria-hidden="true"></i>
+          </div>
+          <!--Contenedor del mapa-->
+          <div class="map row">
+            <iframe class="col-xsm-12 col-sm-12 col-lg-12" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15050.73524619392!2d-99.1622213!3d19.4260629!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1516380600622" width="800" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <!--Contenedor del filtro-->
+          <div class="filter row">
+            <h2>Comida cerca de ti</h2>
+            <input type="text" id="searcher" class="col-xsm-6 center-block" placeholder="Tipo de comida">
+          </div>
+          <div class="images row">
+            <div class="img-col1 col-xs-6 col-sm-6 col-md-6"></div>
+            <div class="img-col2 col-xs-6 col-sm-6 col-md-6"></div>
+          </div>
+          <div class="images row">
+            <div class="img-col3 col-xs-4 col-sm-4 col-md-4"></div>
+            <div class="img-col4 col-xs-4 col-sm-4 col-md-4"></div>
+            <div class="img-col5 col-xs-4 col-sm-4 col-md-4"></div>
+          </div>
+        </section>
+        <!--Seccion del modal-->
+        <section class="modal">
+
+        </section>
+      </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/data-food.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
